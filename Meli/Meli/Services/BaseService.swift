@@ -22,8 +22,7 @@ class BaseService {
     }
 
     func getCodable<T: Decodable>(URL: String,
-                                  headers: HTTPHeaders? = HTTPHeaders(["Content-Type": "application/json",
-                                                                       "x-api-key": "4518de6c6b404152b43ec3aaae267c5f"]),
+                                  headers: HTTPHeaders? = HTTPHeaders(["Content-Type": "application/json"]),
                                   parameters: [String: AnyObject]?,
                                   timeout: Double = 15,
                                   responseType: T.Type,
@@ -45,6 +44,7 @@ class BaseService {
 
                     completion(objectResponse, nil)
                 } catch let error {
+                    fatalError("Failed to decode from bundle. Error: \(error)")
                     completion(nil, error as NSError)
                 }
             }
