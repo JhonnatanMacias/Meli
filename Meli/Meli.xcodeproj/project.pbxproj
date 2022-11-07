@@ -33,6 +33,19 @@
 		CA296C05291362900028B07E /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA296C04291362900028B07E /* ItemDetailViewModel.swift */; };
 		CA296C07291363220028B07E /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA296C06291363220028B07E /* LoadingViewController.swift */; };
 		CA296C0B291363B20028B07E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA296C0A291363B10028B07E /* HomeViewModel.swift */; };
+		CA9BDBF62919827700E455F7 /* BulletedCopyBlockCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9BDBF52919827700E455F7 /* BulletedCopyBlockCellTest.swift */; };
+		CA9BDBF82919867F00E455F7 /* BulletedCopyBlockTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9BDBF72919867F00E455F7 /* BulletedCopyBlockTest.swift */; };
+		CA9BDBFA2919A3DB00E455F7 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9BDBF92919A3DB00E455F7 /* HomeViewModelTest.swift */; };
+		CADD5B1A29188955002C6466 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5B1929188955002C6466 /* ItemDetailViewController.swift */; };
+		CADD5B1C2918A2AC002C6466 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5B1B2918A2AC002C6466 /* MainNavigationController.swift */; };
+		CADD5FEF2918A575002C6466 /* UINavigation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FEE2918A575002C6466 /* UINavigation+Extensions.swift */; };
+		CADD5FF22918AA43002C6466 /* BulletedCopyBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FF12918AA43002C6466 /* BulletedCopyBlockCell.swift */; };
+		CADD5FF52918AA84002C6466 /* BulletedCopyBlockCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FF42918AA83002C6466 /* BulletedCopyBlockCellModel.swift */; };
+		CADD5FF72918ACA1002C6466 /* EncircledImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FF62918ACA1002C6466 /* EncircledImage.swift */; };
+		CADD5FF92918B4A9002C6466 /* BulletedCopyBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FF82918B4A9002C6466 /* BulletedCopyBlock.swift */; };
+		CADD5FFB2918B4F9002C6466 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FFA2918B4F9002C6466 /* UIStackView+Extension.swift */; };
+		CADD5FFD2918B5BE002C6466 /* LayoutConstrainingInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FFC2918B5BE002C6466 /* LayoutConstrainingInsets.swift */; };
+		CADD5FFF29197328002C6466 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADD5FFE29197328002C6466 /* TagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +100,19 @@
 		CA296C04291362900028B07E /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
 		CA296C06291363220028B07E /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		CA296C0A291363B10028B07E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CA9BDBF52919827700E455F7 /* BulletedCopyBlockCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedCopyBlockCellTest.swift; sourceTree = "<group>"; };
+		CA9BDBF72919867F00E455F7 /* BulletedCopyBlockTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedCopyBlockTest.swift; sourceTree = "<group>"; };
+		CA9BDBF92919A3DB00E455F7 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		CADD5B1929188955002C6466 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		CADD5B1B2918A2AC002C6466 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		CADD5FEE2918A575002C6466 /* UINavigation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extensions.swift"; sourceTree = "<group>"; };
+		CADD5FF12918AA43002C6466 /* BulletedCopyBlockCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedCopyBlockCell.swift; sourceTree = "<group>"; };
+		CADD5FF42918AA83002C6466 /* BulletedCopyBlockCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedCopyBlockCellModel.swift; sourceTree = "<group>"; };
+		CADD5FF62918ACA1002C6466 /* EncircledImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncircledImage.swift; sourceTree = "<group>"; };
+		CADD5FF82918B4A9002C6466 /* BulletedCopyBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedCopyBlock.swift; sourceTree = "<group>"; };
+		CADD5FFA2918B4F9002C6466 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		CADD5FFC2918B5BE002C6466 /* LayoutConstrainingInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstrainingInsets.swift; sourceTree = "<group>"; };
+		CADD5FFE29197328002C6466 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		DABD2AEBD05E693CC37F2419 /* Pods-Meli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli.debug.xcconfig"; path = "Target Support Files/Pods-Meli/Pods-Meli.debug.xcconfig"; sourceTree = "<group>"; };
 		DEF06552DFF492E8A24B2607 /* Pods-Meli-MeliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meli-MeliUITests.debug.xcconfig"; path = "Target Support Files/Pods-Meli-MeliUITests/Pods-Meli-MeliUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +201,9 @@
 			isa = PBXGroup;
 			children = (
 				CA296B772910C3520028B07E /* MeliTests.swift */,
+				CA9BDBF52919827700E455F7 /* BulletedCopyBlockCellTest.swift */,
+				CA9BDBF72919867F00E455F7 /* BulletedCopyBlockTest.swift */,
+				CA9BDBF92919A3DB00E455F7 /* HomeViewModelTest.swift */,
 			);
 			path = MeliTests;
 			sourceTree = "<group>";
@@ -211,6 +240,9 @@
 		CA296B922910C5D50028B07E /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				CADD5FF32918AA77002C6466 /* Model */,
+				CADD5FF02918AA32002C6466 /* Views */,
+				CADD5B1829188946002C6466 /* ViewController */,
 				CA296C03291362860028B07E /* ViewModel */,
 			);
 			path = Details;
@@ -223,6 +255,7 @@
 				CA296BA32910C83D0028B07E /* ConstraintUtil.swift */,
 				CA296BA52910C8670028B07E /* ReusableView.swift */,
 				CA296C06291363220028B07E /* LoadingViewController.swift */,
+				CADD5FFC2918B5BE002C6466 /* LayoutConstrainingInsets.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -242,6 +275,8 @@
 				CA296B9B2910C7DF0028B07E /* UITableView+Extensions.swift */,
 				CA296B9D2910C7F50028B07E /* UIView+Extension.swift */,
 				CA296B9F2910C80D0028B07E /* UIColor+Extension.swift */,
+				CADD5FEE2918A575002C6466 /* UINavigation+Extensions.swift */,
+				CADD5FFA2918B4F9002C6466 /* UIStackView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -250,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				CA296B642910C3500028B07E /* ViewController.swift */,
+				CADD5B1B2918A2AC002C6466 /* MainNavigationController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -285,6 +321,33 @@
 				CA296C04291362900028B07E /* ItemDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CADD5B1829188946002C6466 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CADD5B1929188955002C6466 /* ItemDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CADD5FF02918AA32002C6466 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CADD5FF12918AA43002C6466 /* BulletedCopyBlockCell.swift */,
+				CADD5FF62918ACA1002C6466 /* EncircledImage.swift */,
+				CADD5FF82918B4A9002C6466 /* BulletedCopyBlock.swift */,
+				CADD5FFE29197328002C6466 /* TagView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CADD5FF32918AA77002C6466 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CADD5FF42918AA83002C6466 /* BulletedCopyBlockCellModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EDD85F1966CB16B3751C6F39 /* Frameworks */ = {
@@ -544,12 +607,22 @@
 				CA296BFC291361660028B07E /* ResultViewCell.swift in Sources */,
 				CA296B972910C60F0028B07E /* BaseService.swift in Sources */,
 				CA296C02291362160028B07E /* Item.swift in Sources */,
+				CADD5FFD2918B5BE002C6466 /* LayoutConstrainingInsets.swift in Sources */,
+				CADD5FFB2918B4F9002C6466 /* UIStackView+Extension.swift in Sources */,
 				CA296B9E2910C7F50028B07E /* UIView+Extension.swift in Sources */,
+				CADD5FF92918B4A9002C6466 /* BulletedCopyBlock.swift in Sources */,
+				CADD5B1C2918A2AC002C6466 /* MainNavigationController.swift in Sources */,
 				CA296B992910C7150028B07E /* MeliServices.swift in Sources */,
+				CADD5FF72918ACA1002C6466 /* EncircledImage.swift in Sources */,
 				CA296BA62910C8670028B07E /* ReusableView.swift in Sources */,
 				CA296B652910C3500028B07E /* ViewController.swift in Sources */,
+				CADD5FFF29197328002C6466 /* TagView.swift in Sources */,
+				CADD5FEF2918A575002C6466 /* UINavigation+Extensions.swift in Sources */,
 				CA296B9C2910C7DF0028B07E /* UITableView+Extensions.swift in Sources */,
+				CADD5FF22918AA43002C6466 /* BulletedCopyBlockCell.swift in Sources */,
 				CA296B612910C3500028B07E /* AppDelegate.swift in Sources */,
+				CADD5B1A29188955002C6466 /* ItemDetailViewController.swift in Sources */,
+				CADD5FF52918AA84002C6466 /* BulletedCopyBlockCellModel.swift in Sources */,
 				CA296B632910C3500028B07E /* SceneDelegate.swift in Sources */,
 				CA296BA02910C80D0028B07E /* UIColor+Extension.swift in Sources */,
 				CA296BA22910C8230028B07E /* Bindable.swift in Sources */,
@@ -560,7 +633,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9BDBF82919867F00E455F7 /* BulletedCopyBlockTest.swift in Sources */,
 				CA296B782910C3520028B07E /* MeliTests.swift in Sources */,
+				CA9BDBF62919827700E455F7 /* BulletedCopyBlockCellTest.swift in Sources */,
+				CA9BDBFA2919A3DB00E455F7 /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

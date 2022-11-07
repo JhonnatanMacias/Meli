@@ -39,18 +39,16 @@ class HomeViewModel: HomeViewModelProtocol {
                                                     availableSorts: [],
                                                     filters: [],
                                                     availableFilters: []))
-//    var repository = RecipesServices()
     var cellsViewModel: Bindable<[ResultCellViewModel]> = Bindable([])
     var navigateToDetails: ((ItemDetailViewModel) -> ())?
 
-    private lazy var dataSoruce = MeliServices()
+    private var dataSoruce: MeliServices!
 
-    init() { }
-
-    func viewDidLoad() {
-
+    init(dataSource: MeliServices) {
+        self.dataSoruce = dataSource
     }
 
+    func viewDidLoad() {}
 
     func getItems(itemTitle: String) {
         displaySpinner?()

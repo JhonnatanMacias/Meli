@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 
     private let loadingVC = LoadingViewController()
 
-    private var viewModel: HomeViewModelProtocol? {
+    var viewModel: HomeViewModelProtocol? {
         didSet {
             loadViewIfNeeded()
 
@@ -39,16 +39,6 @@ class ViewController: UIViewController {
                     self.tableView.reloadData()
                 }
             }
-
-//            viewModel?.cellsViewModel.bindAndFire { [weak self] _ in
-//                guard let self = self else {
-//                      return
-//                }
-//
-//                DispatchQueue.main.async {
-//                    self.tableView.reloadData()
-//                }
-//            }
 
             viewModel?.displaySpinner = { [weak self]  in
                 guard let self = self else {
@@ -73,8 +63,15 @@ class ViewController: UIViewController {
 
                 self.presentError()
             }
-        }
 
+            viewModel?.navigateToDetails = { [weak self] viewModel in
+                guard let self = self else {
+                    return
+                }
+
+                self.presentDetailView(viewModel: viewModel)
+            }
+        }
     }
 
     override func viewDidLoad() {
@@ -85,7 +82,21 @@ class ViewController: UIViewController {
         constructSubviewHierarchy()
         constructSubviewLayoutConstraints()
 
-        viewModel = HomeViewModel()
+        if viewModel == nil {
+            viewModel = HomeViewModel(dataSource: MeliServices())
+        }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+    }
+
+    func presentDetailView(viewModel: ItemDetailViewModel) {
+        let detailVC = ItemDetailViewController()
+        detailVC.viewModel = viewModel
+        self.navigationController?.pushViewController(detailVC,
+                                                      animated: true)
     }
 
     private func constructView() {
@@ -122,6 +133,7 @@ class ViewController: UIViewController {
         tableView.register(ResultViewCell.self, forCellReuseIdentifier: Constants.itemCellIdentifier)
         tableView.separatorStyle = .singleLine
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.backgroundColor = .systemGray6
     }
 
@@ -171,8 +183,11 @@ extension ViewController: UISearchResultsUpdating {
 
 extension ViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        if let title = searchBar.text?.trimmingCharacters(in: CharacterSet.whitespaces) {
-            viewModel?.getItems(itemTitle: title)
+        if let title = searchBar.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) {
+            if title.count > 1 {
+                let formattedString = title.replacingOccurrences(of: " ", with: "")
+                viewModel?.getItems(itemTitle: formattedString)
+            }
         }
     }
 }
@@ -197,3 +212,34 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension ViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let viewModel = viewModel {
+            let detailVM = viewModel.cellsViewModel.value[indexPath.row].itemDetailViewModel.value
+            viewModel.itemSelected(viewModel: detailVM)
+        }
+    }
+}
+
+// MARK: - Tests
+
+#if DEBUG
+extension ViewController {
+    struct TestHooks {
+        let target: ViewController
+
+        var tableView: UITableView { target.tableView }
+
+        var viewModel: HomeViewModelProtocol? {
+            target.viewModel
+        }
+
+    }
+
+    var testHooks: TestHooks {
+        TestHooks(target: self)
+    }
+}
+#endif

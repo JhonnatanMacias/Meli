@@ -24,10 +24,6 @@ extension UIView {
     class func newAutolayoutStackView() -> UIStackView {
         let stackView = UIStackView(frame: .zero)
         stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.alignment = .leading
-        stackView.distribution = .fill
-        stackView.spacing = 8
         return stackView
     }
 
@@ -49,4 +45,14 @@ extension UIView {
         return image
     }
 
+}
+
+public extension Collection {
+
+    /// A Boolean value indicating whether the collection contains one or more elements.
+    ///
+    /// - Complexity: O(1)
+    @inlinable var isNotEmpty: Bool {
+        !isEmpty
+    }
 }

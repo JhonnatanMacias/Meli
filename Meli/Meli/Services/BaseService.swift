@@ -44,7 +44,6 @@ class BaseService {
 
                     completion(objectResponse, nil)
                 } catch let error {
-                    fatalError("Failed to decode from bundle. Error: \(error)")
                     completion(nil, error as NSError)
                 }
             }

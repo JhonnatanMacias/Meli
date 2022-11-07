@@ -8,13 +8,17 @@
 import Alamofire
 import Foundation
 
-class MeliServices: BaseService {
+
+protocol MeliServicesProtocol {
+
+    func getItems(itemTitle: String, completionHandler: @escaping(Result<Items, Error>) -> Void)
+
+}
+
+class MeliServices: BaseService, MeliServicesProtocol {
 
     struct Constants {
-        static let endPoint = "recipes/random?number=30"
         static let baseURL = "https://api.mercadolibre.com/sites/MLC/search?q="
-        static let searchEndPoint = "recipes/complexSearch?query="
-
     }
 
     init() {
@@ -36,20 +40,4 @@ class MeliServices: BaseService {
             }
         }
     }
-
-    /*
-    func getRecipes(title: String, completionHandler: @escaping(Result<SearchRecipe, Error>) -> Void) {
-        let api = baseURL + Constants.searchEndPoint + title + "&number=30"
-        getCodable(URL: api,
-                   parameters: nil, responseType: SearchRecipe.self) { (response: SearchRecipe?, error: NSError?) in
-            if let error = error {
-                completionHandler(.failure(error as Error))
-            } else if let response = response {
-                completionHandler(.success(response))
-            } else {
-                let erro: Error =  NSError(domain: "", code: 404, userInfo: nil) as Error
-                completionHandler(.failure(erro))
-            }
-        }
-    }*/
 }

@@ -43,7 +43,7 @@ class ResultViewCell: UITableViewCell {
         label.numberOfLines = 4
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .left
-        label.textColor = UIColor.mainGrayDarkFontColor()
+        label.textColor = UIColor.black
         return label
     }()
 

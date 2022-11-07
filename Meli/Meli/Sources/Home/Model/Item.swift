@@ -13,14 +13,14 @@ import Foundation
 
 // MARK: - Welcome
 struct Items: Codable {
-    let siteID: String
-    let countryDefaultTimeZone, query: String
-    let paging: Paging
+    let siteID: String?
+    let countryDefaultTimeZone, query: String?
+    let paging: Paging?
     let items: [Item]
-    let sort: Sort
-    let availableSorts: [Sort]
-    let filters: [Filter]
-    let availableFilters: [AvailableFilter]
+    let sort: Sort?
+    let availableSorts: [Sort]?
+    let filters: [Filter]?
+    let availableFilters: [AvailableFilter]?
 
     enum CodingKeys: String, CodingKey {
         case siteID = "site_id"
@@ -377,7 +377,7 @@ struct Ratings: Codable {
 // MARK: - SellerAddress
 struct SellerAddress: Codable {
     let id, comment, addressLine, zipCode: String?
-    let country, state, city: Sort?
+    var country, state, city: Sort?
     let latitude, longitude: String?
 
     enum CodingKeys: String, CodingKey {

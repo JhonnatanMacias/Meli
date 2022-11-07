@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1008.6956521739131" y="128.57142857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="CPM-yV-xVB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZOe-JO-6eS" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZOe-JO-6eS" customClass="MainNavigationController" customModule="Meli" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U0n-2e-qtg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

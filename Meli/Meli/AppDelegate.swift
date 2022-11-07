@@ -10,10 +10,13 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        UINavigationBar.appearance().customizeBar(withBarTintColor: UIColor.defaultColor(),
+                                                  tintColor: UIColor.gray,
+                                                  titleTextColor: UIColor.black)
+
+        
         return true
     }
 
